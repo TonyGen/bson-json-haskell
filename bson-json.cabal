@@ -1,0 +1,16 @@
+Name: bson-json
+Version: 0.0.1
+Synopsis: Convert BSON to JSON and vice-versa
+Description: ToJSON and FromJSON instances for BSON Documents and Values
+Category: Data, JSON
+Homepage: http://github.com/TonyGen/bson-json-haskell
+Author: Tony Hannan
+Maintainer: Tony Hannan <tonyhannan@gmail.com>
+Copyright: Copyright (c) 2012 Tony Hannan
+License: OtherLicense
+License-file: LICENSE
+cabal-version: >= 1.8
+build-type: Simple
+Library
+    Build-Depends: base < 5, bson, aeson, bytestring, text, unordered-containers, vector, attoparsec
+    Exposed-modules: Data.Bson.Json
